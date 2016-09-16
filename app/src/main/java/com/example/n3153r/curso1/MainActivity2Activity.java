@@ -35,7 +35,7 @@ public class MainActivity2Activity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_main_activity2);
 
         listView =(ListView) findViewById(R.id.listView);
-
+//-------------------------------------
 //        Autocompletar texto
 
         boton = (Button) findViewById(R.id.btnComp);
