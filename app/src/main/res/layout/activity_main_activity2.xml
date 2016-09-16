@@ -99,37 +99,12 @@
         android:layout_alignRight="@+id/texto"
         android:layout_alignEnd="@+id/texto" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Cambiar Ventana"
+        android:id="@+id/btn4"
         android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp"
-        android:layout_above="@+id/linearLayout">
-
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView" >
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="45dp">
-
-                <ListView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/listView"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true" />
-            </RelativeLayout>
-        </ScrollView>
-    </RelativeLayout>
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

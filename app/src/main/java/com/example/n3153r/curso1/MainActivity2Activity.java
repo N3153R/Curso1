@@ -9,16 +9,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity2Activity extends AppCompatActivity implements View.OnClickListener {
 
     TextView textView;
-    Button boton1,boton2;
+    Button boton1,boton2,btnventana;
     Context context = this;
 
     Button boton;
@@ -27,14 +29,18 @@ public class MainActivity2Activity extends AppCompatActivity implements View.OnC
 
     String[] nombre = {"Neiser","Hans", "Carmen","Jhan", "Katia","Elvis"};
 
-    ListView listView;
+//    ListView listView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2);
 
-        listView =(ListView) findViewById(R.id.listView);
+        btnventana = (Button) findViewById(R.id.btn4);
+        btnventana.setOnClickListener(this);
+
+//        listView =(ListView) findViewById(R.id.listView);
 //-------------------------------------
 //        Autocompletar texto
 
@@ -47,7 +53,6 @@ public class MainActivity2Activity extends AppCompatActivity implements View.OnC
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,nombre);
         auto.setThreshold(3);
         auto.setAdapter(adapter);
-
 
 //        -----------
 //        BOTON DIALOG
@@ -112,8 +117,6 @@ public class MainActivity2Activity extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v) {
 
-
-
         switch (v.getId()){
             case R.id.btnComp:
                 String cambio= auto.getText().toString();
@@ -125,6 +128,11 @@ public class MainActivity2Activity extends AppCompatActivity implements View.OnC
                 break;
             case R.id.btnClick2:
                 onCreateDialog(0).show();
+                break;
+            case  R.id.btn4:
+                Intent intent = new Intent(this,MainActivityAutoComplete.class);
+                startActivity(intent);
+
                 break;
         }
 

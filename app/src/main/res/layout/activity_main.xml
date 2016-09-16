@@ -10,35 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.n3153r.curso1.MainActivity">
 
-    <Button
-
-        android:text="Boton Texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:textSize="15dp"
-        android:textColor="?android:attr/colorFocusedHighlight"
-        android:background="?attr/colorButtonNormal"
-        android:visibility="visible"
-        android:textAlignment="center"
-        android:textStyle="normal|bold|italic"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/btnNuevo" />
-
-    <Button
-        android:text="Boton Imagen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:textStyle="normal|bold"
-        android:textSize="15dp"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,11 +54,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/button5"
         android:textAllCaps="false"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
         android:layout_row="7"
-        android:layout_column="14" />
+        android:layout_column="14"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -103,32 +74,6 @@
         android:layout_alignParentStart="true"
         android:layout_row="8"
         android:layout_column="0" />
-
-    <Button
-        android:text="Ejecutar Toast"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_row="8"
-        android:layout_column="14"
-        android:textSize="15dp" />
-
-    <Button
-        android:text="Abrir Nueva"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnNuevo"
-        android:layout_above="@+id/button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_row="12"
-        android:layout_column="14"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:textSize="15dp" />
 
     <ToggleButton
         android:layout_width="727dp"
@@ -146,12 +91,14 @@
         android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:layout_alignBottom="@+id/radioGroup"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_alignRight="@+id/btnNuevo"
-        android:layout_alignEnd="@+id/btnNuevo"
         android:layout_row="33"
-        android:layout_column="13" />
+        android:layout_column="13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_below="@+id/imageView" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -186,5 +133,69 @@
             android:id="@+id/radioButton3" />
 
     </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button5">
+
+        <Button
+
+            android:text="Boton Texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:textSize="15dp"
+            android:textColor="?android:attr/colorFocusedHighlight"
+            android:background="?attr/colorButtonNormal"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:textStyle="normal|bold|italic"
+            android:layout_above="@+id/button"
+            android:layout_alignLeft="@+id/btnNuevo"
+            android:layout_alignStart="@+id/btnNuevo"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button" />
+
+        <Button
+            android:text="Boton Imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:textStyle="normal|bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Ejecutar Toast"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/button3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="8"
+            android:layout_column="14"
+            android:textSize="15dp" />
+
+        <Button
+            android:text="Abrir Nueva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNuevo"
+            android:layout_row="12"
+            android:layout_column="14"
+            android:textSize="15dp"
+            android:layout_above="@+id/button2"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_marginBottom="23dp" />
+    </LinearLayout>
 
 </RelativeLayout>

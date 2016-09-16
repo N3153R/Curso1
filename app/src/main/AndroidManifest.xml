@@ -24,8 +24,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2Activity" />
-        <activity android:name=".MainActivityAutoComplete"></activity>
+        <activity android:name=".MainActivity2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN3ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityAutoComplete">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITYAUTOCOMPLETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
