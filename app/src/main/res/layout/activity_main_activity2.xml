@@ -9,275 +9,127 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.n3153r.curso1.MainActivity2Activity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boton"
-                    android:layout_margin="10dp"
-                    />
-
-            </LinearLayout>
-        </HorizontalScrollView>
-    </ScrollView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView2">
-
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:orientation="vertical"
-            android:layout_below="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOTON DIALOGO IMAGEN"
+        android:id="@+id/btnClick2"
+        android:background="#704242"
+        android:allowUndo="false"
+        android:backgroundTint="#d3adad"
+            android:layout_below="@+id/btnClick"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOTON DIALOGO"
+        android:id="@+id/btnClick"
+        android:background="#704242"
+        android:allowUndo="false"
+        android:backgroundTint="#d3adad"
+            android:layout_below="@+id/texto"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="33dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/texto"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#fa3939"
+        android:textAlignment="center"
+        android:textStyle="normal|bold|italic"
+        android:textSize="20dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:hint="Ingrese Nombre"
+        android:textStyle="bold"
+        android:layout_below="@+id/texto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnComp"
+        android:layout_toLeftOf="@+id/btnComp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/auto"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/btnComp"
+        android:layout_gravity="right"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/auto"
+        android:layout_alignRight="@+id/texto"
+        android:layout_alignEnd="@+id/texto" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:layout_above="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="New Text"
-                android:id="@+id/texto"
-                android:layout_alignParentTop="true"
+                android:layout_below="@+id/textView"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="45dp">
 
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BOTON DIALOGO IMAGEN"
-            android:id="@+id/btnClick2"
-            android:background="#704242"
-            android:allowUndo="false"
-            android:backgroundTint="#d3adad"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="25dp" />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BOTON DIALOGO"
-            android:id="@+id/btnClick"
-            android:background="#704242"
-            android:allowUndo="false"
-            android:backgroundTint="#d3adad"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="26dp" />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Boton"
-            />
-        </LinearLayout>
-    </ScrollView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
 
 </RelativeLayout>
