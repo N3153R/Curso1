@@ -16,22 +16,43 @@ public class MainActivityAutoComplete extends AppCompatActivity implements View.
     ListView listView;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_auto_complete);
 
+
+
+        FrutasVerduras frutasVerdurases_datos[] = new FrutasVerduras[]{
+                new FrutasVerduras(R.drawable.ic_launcher,"Manzana"),
+                new FrutasVerduras(R.drawable.ic_launcher,"pera"),
+                new FrutasVerduras(R.drawable.ic_launcher,"lechuga"),
+                new FrutasVerduras(R.drawable.ic_launcher,"limon"),
+                new FrutasVerduras(R.drawable.ic_launcher,"tomate"),
+        };
+
+
+
+        FrutasVerdurasAdapter adapter = new FrutasVerdurasAdapter(this,R.layout.listview_item_row, frutasVerdurases_datos);
+
         listView =(ListView) findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,nombre);
-//        auto.setThreshold(3);
+
+        View header =(View) getLayoutInflater().inflate(R.layout.list_header_row,null);
+        listView.addHeaderView(header);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(),String.valueOf(i),Toast.LENGTH_SHORT).show();
-            }
-        });
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,nombre);
+////        auto.setThreshold(3);
+//        listView.setAdapter(adapter);
+//
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Toast.makeText(getApplicationContext(),String.valueOf(i),Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override
